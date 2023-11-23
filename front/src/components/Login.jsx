@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 function Login(){
     const [login, setLogin] = useState({
@@ -23,6 +24,7 @@ function Login(){
         // Add your registration logic here
         console.log('Registration:', registration);
     };
+
 
     return (
         <div className="App">
@@ -71,6 +73,9 @@ function Login(){
                     <button type="submit">Register</button>
                 </form>
             </div>
+
+
+            <Link to ="/map"><li>map</li></Link>
         </div>
     );
 }
