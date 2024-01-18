@@ -1,9 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Container as MapDiv, NaverMap } from 'react-naver-maps'
 
-
-
-function Map() {
+export const Map = () =>{
     return(
         <MapDiv
             style={{
